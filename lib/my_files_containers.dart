@@ -110,7 +110,7 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 15, horizontal: 33),
+                          vertical: 15, horizontal: 30),
                       child: Row(
                         children: [
                           Column(
