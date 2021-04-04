@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'file:///E:/FlutterProjects/my_files/lib/my_files_containers.dart';
+import 'package:my_files/my_files_containers.dart';
 
 class MyFilesScreen extends StatefulWidget {
   @override
