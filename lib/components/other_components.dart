@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 class OtherComponents extends StatelessWidget {
   final String image;
-  final String title ;
+  final String title;
   final String subtitle;
-  OtherComponents({this.image,this.title,this.subtitle});
+  OtherComponents(
+      {@required this.image, @required this.title, @required this.subtitle});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +20,7 @@ class OtherComponents extends StatelessWidget {
       ),
       subtitle: Text(
         subtitle,
-        style: TextStyle(
-            fontSize: 12.0, color: Color(0xFF9E9E9E)),
+        style: TextStyle(fontSize: 12.0, color: Color(0xFF9E9E9E)),
       ),
     );
   }

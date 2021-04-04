@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyRecentFiles extends StatelessWidget {
   final String image;
   final String title;
-  MyRecentFiles({this.image, this.title});
+  MyRecentFiles({ @required this.image, @required this.title});
   @override
   Widget build(BuildContext context) {
     return Container(
