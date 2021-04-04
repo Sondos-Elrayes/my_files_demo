@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'file:///E:/FlutterProjects/my_files/lib/components/my_recent_flies.dart';
 import 'package:my_files/components/my_categories.dart';
+import 'package:my_files/components/my_recent_flies.dart';
 import 'package:my_files/components/other_components.dart';
 
 class MyFilesContainer extends StatefulWidget {
