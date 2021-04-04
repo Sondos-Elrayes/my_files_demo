@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'file:///E:/FlutterProjects/my_files/lib/componants/my_recent_flies.dart';
-import 'package:my_files/componants/my_categories.dart';
+import 'file:///E:/FlutterProjects/my_files/lib/components/my_recent_flies.dart';
+import 'package:my_files/components/my_categories.dart';
+import 'package:my_files/components/other_components.dart';
 
 class MyFilesContainer extends StatefulWidget {
   @override
@@ -185,20 +186,10 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ListTile(
-                        leading: Image.asset(
-                          'assets/images/mobile.png',
-                          height: 38,
-                        ),
-                        title: Text(
-                          'Internal storage',
-                          style: TextStyle(fontSize: 18.0),
-                        ),
-                        subtitle: Text(
-                          '48.06 GB / 64.00 GB',
-                          style: TextStyle(
-                              fontSize: 12.0, color: Color(0xFF9E9E9E)),
-                        ),
+                      OtherComponents(
+                        image: 'assets/images/mobile.png',
+                        title: 'Internal storage',
+                        subtitle: '48.06 GB / 64.00 GB',
                       ),
                       Expanded(
                         child: Divider(
@@ -208,20 +199,10 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                           thickness: 0.3,
                         ),
                       ),
-                      ListTile(
-                        leading: Image.asset(
-                          'assets/images/sd.png',
-                          height: 38,
-                        ),
-                        title: Text(
-                          'SD card',
-                          style: TextStyle(fontSize: 18.0),
-                        ),
-                        subtitle: Text(
-                          'Not inserted',
-                          style: TextStyle(
-                              fontSize: 12.0, color: Color(0xFF9E9E9E)),
-                        ),
+                      OtherComponents(
+                        image: 'assets/images/sd.png',
+                        title: 'SD card',
+                        subtitle: 'Not inserted',
                       ),
                       Expanded(
                         child: Divider(
@@ -231,20 +212,10 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                           thickness: 0.3,
                         ),
                       ),
-                      ListTile(
-                        leading: Image.asset(
-                          'assets/images/cloud.png',
-                          height: 38,
-                        ),
-                        title: Text(
-                          'Samsung Cloud Drive',
-                          style: TextStyle(fontSize: 18.0),
-                        ),
-                        subtitle: Text(
-                          'Not signed in ',
-                          style: TextStyle(
-                              fontSize: 12.0, color: Color(0xFF9E9E9E)),
-                        ),
+                      OtherComponents(
+                        image: 'assets/images/cloud.png',
+                        title: 'Samsung Cloud Drive',
+                        subtitle: 'Not signed in ',
                       ),
                       Expanded(
                         child: Divider(
@@ -254,20 +225,10 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                           thickness: 0.3,
                         ),
                       ),
-                      ListTile(
-                        leading: Image.asset(
-                          'assets/images/oneDrive.png',
-                          height: 38,
-                        ),
-                        title: Text(
-                          'OneDrive',
-                          style: TextStyle(fontSize: 18.0),
-                        ),
-                        subtitle: Text(
-                          'Not signed in ',
-                          style: TextStyle(
-                              fontSize: 12.0, color: Color(0xFF9E9E9E)),
-                        ),
+                      OtherComponents(
+                        image: 'assets/images/oneDrive.png',
+                        title: 'OneDrive',
+                        subtitle: 'Not signed in ',
                       ),
                       Expanded(
                         child: Divider(
@@ -277,20 +238,10 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                           thickness: 0.3,
                         ),
                       ),
-                      ListTile(
-                        leading: Image.asset(
-                          'assets/images/google.png',
-                          height: 38,
-                        ),
-                        title: Text(
-                          'Google Drive',
-                          style: TextStyle(fontSize: 18.0),
-                        ),
-                        subtitle: Text(
-                          '13.76 GB free',
-                          style: TextStyle(
-                              fontSize: 12.0, color: Color(0xFF9E9E9E)),
-                        ),
+                      OtherComponents(
+                        image: 'assets/images/google.png',
+                        title: 'Google Drive',
+                        subtitle: '13.76 GB free',
                       ),
                     ],
                   ),
