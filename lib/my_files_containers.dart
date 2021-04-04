@@ -107,62 +107,60 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                       style: TextStyle(fontSize: 18),
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 15, horizontal: 33),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                MyCategories(
-                                    image: 'assets/images/image.png',
-                                    text: 'Image'),
-                                SizedBox(
-                                  height: 15,
-                                ),
-                                MyCategories(
-                                    image: 'assets/images/docs.png',
-                                    text: 'Documents'),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 50.0,
-                            ),
-                            Column(
-                              // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              // crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                MyCategories(
-                                    image: 'assets/images/video.png',
-                                    text: 'Video'),
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                MyCategories(
-                                    image: 'assets/images/download.png',
-                                    text: 'Downloads'),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 50.0,
-                            ),
-                            Column(
-                              children: [
-                                MyCategories(
-                                    image: 'assets/images/music.png',
-                                    text: 'Audio'),
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                MyCategories(
-                                    image: 'assets/images/APK.png',
-                                    text: 'Installation files'),
-                              ],
-                            ),
-                          ],
-                        ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 33),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              MyCategories(
+                                  image: 'assets/images/image.png',
+                                  text: 'Image'),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              MyCategories(
+                                  image: 'assets/images/docs.png',
+                                  text: 'Documents'),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 50.0,
+                          ),
+                          Column(
+                            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            // crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              MyCategories(
+                                  image: 'assets/images/video.png',
+                                  text: 'Video'),
+                              SizedBox(
+                                height: 15.0,
+                              ),
+                              MyCategories(
+                                  image: 'assets/images/download.png',
+                                  text: 'Downloads'),
+                            ],
+                          ),
+                          SizedBox(
+                            width: 50.0,
+                          ),
+                          Column(
+                            children: [
+                              MyCategories(
+                                  image: 'assets/images/music.png',
+                                  text: 'Audio'),
+                              SizedBox(
+                                height: 15.0,
+                              ),
+                              MyCategories(
+                                  image: 'assets/images/APK.png',
+                                  text: 'Installation files'),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -172,79 +170,77 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
           ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-            child: Expanded(
-              child: Container(
-                width: deviceSize.width,
-                height: 380,
-                decoration: BoxDecoration(
-                  color: Color(0xFF252525),
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      OtherComponents(
-                        image: 'assets/images/mobile.png',
-                        title: 'Internal storage',
-                        subtitle: '48.06 GB / 64.00 GB',
+            child: Container(
+              width: deviceSize.width,
+              height: 380,
+              decoration: BoxDecoration(
+                color: Color(0xFF252525),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(5),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    OtherComponents(
+                      image: 'assets/images/mobile.png',
+                      title: 'Internal storage',
+                      subtitle: '48.06 GB / 64.00 GB',
+                    ),
+                    Expanded(
+                      child: Divider(
+                        indent: 70.0,
+                        endIndent: 10.0,
+                        color: Color(0xFF616161),
+                        thickness: 0.3,
                       ),
-                      Expanded(
-                        child: Divider(
-                          indent: 70.0,
-                          endIndent: 10.0,
-                          color: Color(0xFF616161),
-                          thickness: 0.3,
-                        ),
+                    ),
+                    OtherComponents(
+                      image: 'assets/images/sd.png',
+                      title: 'SD card',
+                      subtitle: 'Not inserted',
+                    ),
+                    Expanded(
+                      child: Divider(
+                        indent: 70.0,
+                        endIndent: 10.0,
+                        color: Color(0xFF616161),
+                        thickness: 0.3,
                       ),
-                      OtherComponents(
-                        image: 'assets/images/sd.png',
-                        title: 'SD card',
-                        subtitle: 'Not inserted',
+                    ),
+                    OtherComponents(
+                      image: 'assets/images/cloud.png',
+                      title: 'Samsung Cloud Drive',
+                      subtitle: 'Not signed in ',
+                    ),
+                    Expanded(
+                      child: Divider(
+                        indent: 70.0,
+                        endIndent: 10.0,
+                        color: Color(0xFF616161),
+                        thickness: 0.3,
                       ),
-                      Expanded(
-                        child: Divider(
-                          indent: 70.0,
-                          endIndent: 10.0,
-                          color: Color(0xFF616161),
-                          thickness: 0.3,
-                        ),
+                    ),
+                    OtherComponents(
+                      image: 'assets/images/oneDrive.png',
+                      title: 'OneDrive',
+                      subtitle: 'Not signed in ',
+                    ),
+                    Expanded(
+                      child: Divider(
+                        indent: 70.0,
+                        endIndent: 10.0,
+                        color: Color(0xFF616161),
+                        thickness: 0.3,
                       ),
-                      OtherComponents(
-                        image: 'assets/images/cloud.png',
-                        title: 'Samsung Cloud Drive',
-                        subtitle: 'Not signed in ',
-                      ),
-                      Expanded(
-                        child: Divider(
-                          indent: 70.0,
-                          endIndent: 10.0,
-                          color: Color(0xFF616161),
-                          thickness: 0.3,
-                        ),
-                      ),
-                      OtherComponents(
-                        image: 'assets/images/oneDrive.png',
-                        title: 'OneDrive',
-                        subtitle: 'Not signed in ',
-                      ),
-                      Expanded(
-                        child: Divider(
-                          indent: 70.0,
-                          endIndent: 10.0,
-                          color: Color(0xFF616161),
-                          thickness: 0.3,
-                        ),
-                      ),
-                      OtherComponents(
-                        image: 'assets/images/google.png',
-                        title: 'Google Drive',
-                        subtitle: '13.76 GB free',
-                      ),
-                    ],
-                  ),
+                    ),
+                    OtherComponents(
+                      image: 'assets/images/google.png',
+                      title: 'Google Drive',
+                      subtitle: '13.76 GB free',
+                    ),
+                  ],
                 ),
               ),
             ),
