@@ -21,21 +21,6 @@ class _MyFilesScreenState extends State<MyFilesScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Hero(
-                          tag: 'myFiles',
-                          child: AnimatedCrossFade(
-                            crossFadeState: CrossFadeState.showFirst,
-                            firstChild: Text(
-                              'My Files',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.black),
-                            ),
-                            secondChild: Text(
-                              'My Files',
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
-                        ),
                         SizedBox(
                           width: 240.0,
                         ),
@@ -59,15 +44,12 @@ class _MyFilesScreenState extends State<MyFilesScreen> {
               expandedHeight: 325.0,
               flexibleSpace: FlexibleSpaceBar(
                 titlePadding: EdgeInsets.only(bottom: 100),
-                title: Hero(
-                  tag: 'myFiles',
-                  child: Text(
-                    'My Files',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28.0,
-                        fontWeight: FontWeight.w300),
-                  ),
+                title: Text(
+                  'My Files',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28.0,
+                      fontWeight: FontWeight.w300),
                 ),
                 centerTitle: true,
               ),
