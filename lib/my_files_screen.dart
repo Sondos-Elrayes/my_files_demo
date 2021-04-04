@@ -21,9 +21,6 @@ class _MyFilesScreenState extends State<MyFilesScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        SizedBox(
-                          width: 240.0,
-                        ),
                         Icon(
                           Icons.search,
                           size: 25.0,
