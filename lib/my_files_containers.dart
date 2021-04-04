@@ -101,7 +101,7 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                 children: [
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 20, top: 10, bottom: 5),
+                        const EdgeInsets.only(left: 20, top: 12, bottom: 5),
                     child: Text(
                       'Categories',
                       style: TextStyle(fontSize: 18),
@@ -110,21 +110,23 @@ class _MyFilesContainerState extends State<MyFilesContainer> {
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 15, horizontal: 30),
+                          vertical: 15, horizontal: 27),
                       child: Row(
                         children: [
-                          Column(
-                            children: [
-                              MyCategories(
-                                  image: 'assets/images/image.png',
-                                  text: 'Image'),
-                              SizedBox(
-                                height: 15,
-                              ),
-                              MyCategories(
-                                  image: 'assets/images/docs.png',
-                                  text: 'Documents'),
-                            ],
+                          Expanded(
+                            child: Column(
+                              children: [
+                                MyCategories(
+                                    image: 'assets/images/image.png',
+                                    text: 'Image'),
+                                SizedBox(
+                                  height: 15,
+                                ),
+                                MyCategories(
+                                    image: 'assets/images/docs.png',
+                                    text: 'Documents'),
+                              ],
+                            ),
                           ),
                           SizedBox(
                             width: 50.0,
